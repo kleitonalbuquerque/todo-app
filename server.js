@@ -19,11 +19,11 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  res.json({
-    message: "Rota principal",
-  });
-});
+// app.get("/", (req, res) => {
+//   res.json({
+//     message: "Rota principal",
+//   });
+// });
 
 require("./app/routes/tutorial.routes")(app);
 
