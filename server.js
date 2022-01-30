@@ -25,6 +25,8 @@ app.get("/", (req, res) => {
   });
 });
 
+require("./app/routes/tutorial.routes")(app);
+
 app.listen(PORT, (error) => {
   if (error) {
     console.log("Ops! Alguma coisa deu errado!");
